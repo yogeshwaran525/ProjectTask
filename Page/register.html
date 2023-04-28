@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--- favicon -->
+  <link rel="shortcut icon" href="./image/android-chrome-192x192.png" type="image/x-icon">
+  <!-- Social Media Icons -->
+  <script src="https://kit.fontawesome.com/6a6ad32422.js" crossorigin="anonymous"></script>
+  <!-- Style sheet -->
+  <link rel="stylesheet" href="./stylings.css">
+  <title>GetAVA ChatBOT</title>
+</head>
+
+<body>
+  <!-- Nav bar section -->
+  <nav>
+    <div class="header">
+      <a href="/">
+        <h1>GETAVA.IO</h1>
+      </a>
+      <div class="headerbtn">
+        <a href="/register.html"><button class="button">Register</button></a>
+        <a href="/login.html"><button class="button">Login</button></a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="text">Registration</div>
+    <form action="/auth/register" method="post">
+      <div class="data">
+        <label for="name">Full Name</label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div class="data">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div class="data">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <div class="data">
+        <label for="confirm_password">Confirm Password</label>
+        <input type="password" name="confirm_password" id="password" />
+      </div>
+
+      <div class="btn">
+        <button type="submit">Register</button>
+      </div>
+      <div class="signup-link">
+        Already a member ? <a href="/">Login now</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
